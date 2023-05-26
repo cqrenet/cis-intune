@@ -1,0 +1,54 @@
+{
+    "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "description":  null,
+    "displayName":  "CIS Baseline Microsoft Intune for Windows 10 v1.1.1 (NG)",
+    "omaSettings":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "18.8.5.1 (NG) Ensure \u0027Turn On Virtualization Based Security\u0027 is set to \u0027Enabled\u0027",
+                            "description":  "Implemented. Caution. Requires Intel VTX/AMDV and compatible windows drivers.",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  1,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "18.8.5.2 (NG) Ensure \u0027Turn On Virtualization Based Security: Select Platform Security Level\u0027 is set to \u0027Secure Boot and DMA Protection\u0027",
+                            "description":  "Implemented. Caution. Requires Intel VTX, AMDV, secure boot and compatible drivers.",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DeviceGuard/RequirePlatformSecurityFeatures",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  3,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "18.8.5.3 (NG) Ensure \u0027Turn On Virtualization Based Security: Credential Guard Configuration\u0027 is set to \u0027Enabled with UEFI lock\u0027",
+                            "description":  "Implemented. Caution. Requires Intel VTX, AMDV, secure boot, and compatible drivers.",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DeviceGuard/LsaCfgFlags",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  1,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "18.8.5.4 (NG) Ensure \u0027Turn On Virtualization Based Security: Secure Launch Configuration\u0027 is set to \u0027Enabled\u0027",
+                            "description":  "Implemented. Caution. Requires Intel VTX, AMDV, secure boot, and compatible drivers.",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DeviceGuard/ConfigureSystemGuardLaunch",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  1,
+                            "isReadOnly":  false
+                        }
+                    ]
+}

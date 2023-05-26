@@ -1,0 +1,38 @@
+{
+    "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "description":  null,
+    "displayName":  "CIS Baseline Microsoft Intune for Windows 10 v1.1.1 (BL)",
+    "omaSettings":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "18.8.26.1 (BL) Ensure \u0027Enumeration policy for external devices incompatible with Kernel DMA Protection\u0027 is set to \u0027Enabled: Block All\u0027",
+                            "description":  "Implemented",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DmaGuard/DeviceEnumerationPolicy",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "18.8.34.6.3 (BL) Ensure \u0027Allow standby states (S1-S3) when sleeping (on battery)\u0027 is set to \u0027Disabled\u0027",
+                            "description":  "Opposed. Users utilize sleep often. The risk associated with dumping memory is accepted.",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Power/AllowStandbyStatesWhenSleepingOnBattery",
+                            "value":  "\u003cenabled/\u003e"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "18.8.34.6.4 (BL) Ensure \u0027Allow standby states (S1-S3) when sleeping (plugged in)\u0027 is set to \u0027Disabled\u0027",
+                            "description":  "Opposed",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Power/AllowStandbyWhenSleepingPluggedIn",
+                            "value":  "\u003cenabled/\u003e"
+                        }
+                    ]
+}
